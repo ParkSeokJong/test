@@ -1,0 +1,27 @@
+---
+title: "HW1_2011-11067"
+author: "Park Seok Jong"
+date: "2016³â 9¿ù 8ÀÏ"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+
+```{r ozon}
+
+data(airquality)
+attach(airquality)
+
+x<-airquality$Wind
+y<-airquality$Ozone
+summary(lm(y~x))
+plot(lm(y~x))
+
+```
+
